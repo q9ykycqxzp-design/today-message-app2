@@ -1,0 +1,175 @@
+/* ================================
+  全体レイアウト・共通設定
+================================ */
+
+body {
+  background-color: #eef9f9;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 40px 0 20px;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+
+/* ================================
+  コンテナ全体
+================================ */
+
+.app-container {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================================
+  タイトル・見出し
+================================ */
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #333;
+}
+
+h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+
+/* ================================
+  質問セクション
+================================ */
+
+.question-block p {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+
+/* ================================
+  選択肢（ラジオボタン）
+================================ */
+
+.choice-label {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.choice-label:hover {
+  background-color: #f0f8ff;
+}
+
+.choice-label.selected {
+  background-color: #50AFF01A;
+  border-color: #3082BA;
+  color: #3082BA;
+}
+
+.choice-input {
+  display: none;
+}
+
+
+/* ================================
+  ボタンスタイル
+================================ */
+
+.primary-button {
+  background-color: #228be6;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 24px auto;
+  transition: background-color 0.3s;
+}
+
+.primary-button:hover {
+  background-color: #1c7ed6;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #228be6;
+  border: 1px solid #228be6;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 16px auto 0;
+  transition: background-color 0.3s;
+}
+
+.secondary-button:hover {
+  background-color: #e6f4ff;
+}
+
+
+/* ================================
+  診断結果カード
+================================ */
+
+.result-card {
+  position: relative;
+  text-align: center;
+  background-color: #e3f2fd;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.result-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.result-message {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-20%, -50%);
+  font-size: 25px;
+  font-weight: bold;
+  color: #1c7ed6;
+  text-align: center;
+  padding: 0 16px;
+  line-height: 1.5;
+}
